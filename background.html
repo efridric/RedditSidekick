@@ -13,35 +13,35 @@
  <body>
  
 
-
-<form class="navbar-form navbar-left" role="search">
-  <div class="form-group">
-	<div class="input-group">
-		<div class="input-group-btn">
-			<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li><a href="#">All</a></li>
-				<li><a href="#">Hour</a></li>
-				<li><a href="#">Day</a></li>
-				<li><a href="#">Week</a></li>
-				<li><a href="#">Month</a></li>
-				<li><a href="#">Year</a></li>
-			</ul>
-		</div>
-		<input type="text" class="form-control" placeholder="reddit sidekick">
-		<div class="input-group-btn">
-			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Search <span class="caret"></span></button>
-			<ul class="dropdown-menu pull-right">
-				<li><a href="#">Top</a></li>
-				<li><a href="#">Hot</a></li>
-				<li><a href="#">New</a></li>
-			</ul>
-		</div><!-- /btn-group -->
-	</div><!-- /input-group -->
-  </div>
-</form>
-
- 
- 
+<div id="site-content">
+	<form class="navbar-form navbar-left" role="search">
+	  <!-- top input bar -->
+	  <div class="form-group">
+		<div class="input-group">
+			<div class="input-group-btn">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">All</a></li>
+					<li><a href="#">Hour</a></li>
+					<li><a href="#">Day</a></li>
+					<li><a href="#">Week</a></li>
+					<li><a href="#">Month</a></li>
+					<li><a href="#">Year</a></li>
+				</ul>
+			</div>
+			<input type="text" class="form-control" id="query" placeholder="reddit sidekick">
+			<div class="input-group-btn">
+				<button type="button" class="btn btn-primary dropdown-toggle" id="search-btn" data-toggle="dropdown">Search <span class="caret"></span></button>
+				<ul class="dropdown-menu pull-right">
+					<li><a class="search-type" href="#">Hot</a></li>
+					<li><a class="search-type" href="#">Top</a></li>
+					<li><a class="search-type" href="#">New</a></li>
+				</ul>
+			</div><!-- /btn-group -->
+		</div><!-- /input-group -->
+	  </div><!-- /top input bar -->
+	</form>
+	<div id="results"></div>
+</div> 
  </body>
  </html>
