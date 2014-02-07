@@ -20,13 +20,12 @@ $("#query").keypress(function (e) {
 
 
 function redditsearch(type) {
-	alert("im in the search function trying to use type: " + type);
     var query = $("#query").val();
     var time = 'all';
     //var val = type.options[type.selectedIndex].value;
     $("#results").html("");
 
-    $.getJSON("http://www.reddit.com/search.json?q=" + query + "&sort=" + val + "&t=" + time, function (data) {
+    $.getJSON("http://www.reddit.com/search.json?q=" + query + "&t=" + time, function (data) {
 
         var i = 0
         $.each(data.data.children, function (i, item) {
